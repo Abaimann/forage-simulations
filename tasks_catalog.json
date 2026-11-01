@@ -1,0 +1,56 @@
+[
+  {
+    "id": "JPMorgan-Chase-Software-Engineering-Task-2",
+    "company": "J.P. Morgan Chase & Co.",
+    "program": "Software Engineering Lite",
+    "folder_name": "JPMorgan-Chase-Perspective-Data-Grid",
+    "title": "Integrasi Visualisasi Data Grid Real-Time dengan Perspective",
+    "instructions": "# J.P. Morgan Chase & Co. - Software Engineering Lite\n## Task 2: Live Perspective Data Grid & Stream Processor\n\n### Business Context\nTraders on the desk require a dynamic, real-time visual interface to monitor price discrepancies between correlated stock symbols in real-time.\n\n### Technical Requirements\n1. Implement a real-time data feeding server and client utility using Python.\n2. Ingest continuous mock tick streams containing `stock`, `top_ask_price`, `top_bid_price`, and `timestamp`.\n3. Aggregate quotes into a Perspective-ready data structure containing computed fields (`price`, `ratio`, `upper_bound`, `lower_bound`, `trigger_alert`).\n4. Write comprehensive unit test suites verifying streaming throughput, aggregation logic, and alert threshold detection.\n5. Include production-ready README.md explaining architecture, latency considerations, and step-by-step verification.",
+    "senior_commit": "feat(jpmorgan-grid): implementasi processor agregasi data tick-by-tick dan visualisasi Perspective"
+  },
+  {
+    "id": "Deloitte-Technology-Task-1",
+    "company": "Deloitte",
+    "program": "Technology & IIoT Architecture",
+    "folder_name": "Deloitte-IIoT-Telemetry-Ingestion",
+    "title": "Normalisasi & Pipeline Ingesti Data Telemetri IIoT Pabrik",
+    "instructions": "# Deloitte - Technology Consulting\n## Task 1: Daikibo Industrials IIoT Telemetry Ingestion Pipeline\n\n### Business Context\nDaikibo Industrials operates manufacturing plants across 4 continents. Telemetry sensors on production lines stream temperatures, vibration frequencies, and error codes in fragmented legacy JSON and CSV formats.\n\n### Technical Requirements\n1. Build an ETL ingestion module that parses heterogeneous telemetry streams from factory floor sensors.\n2. Normalize timestamps into UTC ISO-8601, clean corrupted sensor anomalies, and validate data contracts.\n3. Calculate statistical moving averages, anomaly detection flags (temperatures > 3 sigma above baseline), and machine health scores.\n4. Provide 100% test coverage with pytest/unittest testing edge cases (corrupt inputs, schema drift, sensor dropouts).\n5. Document data flow architecture, schema definition, and production deployment notes in README.md.",
+    "senior_commit": "feat(deloitte-iiot): rancang pipeline ETL normalisasi telemetri pabrik dan deteksi anomali multi-sensor"
+  },
+  {
+    "id": "Lyft-Backend-Engineering-Task-1",
+    "company": "Lyft",
+    "program": "Backend Engineering Simulation",
+    "folder_name": "Lyft-Fleet-Engine-Refactoring",
+    "title": "Refactoring Arsitektur Komponen Mesin & Sistem Servis Armada Lyft",
+    "instructions": "# Lyft - Backend Engineering\n## Task: Clean Architecture & Strategy Pattern Refactoring for Fleet Maintenance\n\n### Business Context\nLyft's rental car fleet management service needs a modular refactor to handle different engine types (Capulet, Willoughby, Sternman) and battery/tire inspection rules across different vehicle models without tightly coupled inheritance.\n\n### Technical Requirements\n1. Design and implement a clean, extensible object-oriented architecture utilizing the Strategy and Factory patterns.\n2. Decouple Engine, Battery, and Car components with clear interfaces (`Engine`, `Battery`, `Serviceable`).\n3. Implement service criteria: mileage-based triggers, calendar-based intervals, and sensor wear thresholds.\n4. Write robust unit tests verifying servicing logic for all car models (Calliope, Glissando, Palindrome, Rorschach, Thovex).\n5. Author an in-depth README.md detailing architectural design decisions, UML diagram in text/markdown, and extensibility guidelines.",
+    "senior_commit": "refactor(lyft-core): decoupling arsitektur servis armada armada berbasis Factory & Strategy pattern"
+  },
+  {
+    "id": "Walmart-Global-Tech-Task-1",
+    "company": "Walmart Global Tech",
+    "program": "Advanced Software Engineering",
+    "folder_name": "Walmart-Supply-Chain-Optimization",
+    "title": "Implementasi Struktur Data K-Ary Heap untuk Optimasi Antrean Logistik",
+    "instructions": "# Walmart Global Tech - Advanced Software Engineering\n## Task: High-Performance Multi-way Heap for Real-time Warehouse Logistics\n\n### Business Context\nWalmart distribution centers process millions of package fulfillment requests per hour. The existing binary priority queue suffers from cache-miss bottlenecks under heavy multi-core loads.\n\n### Technical Requirements\n1. Implement a generic, high-performance Power-of-Two (2^k-ary) Min-Heap / Max-Heap data structure from scratch in Python.\n2. Optimize branch prediction and cache-line locality for push/pop/peek operations compared to standard binary heaps.\n3. Implement a priority-based order dispatch simulation simulating thousands of simultaneous package arrivals and truck loading events.\n4. Provide benchmark test suites comparing time complexity, memory footprint, and operations-per-second against standard `heapq`.\n5. Write technical README.md detailing algorithmic complexity analysis, mathematical proof of child-parent indices, and profiling results.",
+    "senior_commit": "perf(walmart-logistik): implementasi k-ary priority heap berkinerja tinggi untuk optimasi antrean fulfillment"
+  },
+  {
+    "id": "Goldman-Sachs-Task-1",
+    "company": "Goldman Sachs",
+    "program": "Software Engineering & Cyber Defense",
+    "folder_name": "Goldman-Sachs-Security-Audit-Hashing",
+    "title": "Audit Keamanan Kriptografis & Pipeline Verifikasi Hash Kredensial",
+    "instructions": "# Goldman Sachs - Engineering Division\n## Task: Cryptographic Verification & Credential Security Audit Pipeline\n\n### Business Context\nFollowing a security assessment of legacy internal systems, engineering teams must identify weak password hashing schemes (MD5/SHA1 without salt) and migrate credentials safely to modern standards (Argon2 / PBKDF2 / bcrypt).\n\n### Technical Requirements\n1. Implement a security auditor module that analyzes credential databases for cryptographic entropy and vulnerable hashing patterns.\n2. Implement a secure password upgrade pipeline that re-hashes passwords transparently during authentication.\n3. Simulate brute-force/dictionary collision resilience testing for audited algorithms.\n4. Include unit tests covering edge cases: salt collision resistance, timing attack mitigation, and constant-time string comparison.\n5. Document security threat models, remediation guidelines, and compliance standards (NIST SP 800-63B) in README.md.",
+    "senior_commit": "sec(goldman-audit): implementasi pipeline migrasi kriptografis kredensial dan mitigasi timing-attack"
+  },
+  {
+    "id": "Accenture-Data-Analytics-Task-1",
+    "company": "Accenture",
+    "program": "Data Analytics & Advisory",
+    "folder_name": "Accenture-Content-Strategy-Analytics",
+    "title": "Pipeline Pemrosesan Data & Analisis Kategori Konten Media Sosial",
+    "instructions": "# Accenture - Data Analytics & Strategy\n## Task: Social Buzz Content Engagement & Sentiment Analytics Pipeline\n\n### Business Context\nA rapidly growing social media client (Social Buzz) needs actionable insights from 7 disparate datasets (Reactions, Content, ReactionTypes) totaling over 100,000 interactions to guide their IPO strategy.\n\n### Technical Requirements\n1. Build an automated data cleaning and harmonization pipeline that handles missing values, inconsistent categories, and outliers.\n2. Merge relational datasets using appropriate join strategies (`content_id`, `reaction_type`).\n3. Calculate aggregate engagement scores across content categories and rank top 5 performing segments.\n4. Output structured analytical summaries in CSV and JSON formats, ready for executive reporting.\n5. Write unit tests validating data integrity post-transformation, and document executive insights in README.md.",
+    "senior_commit": "feat(accenture-bi): otomatisasi pipeline agregasi metrik engagement multi-dataset dan pemodelan kategori"
+  }
+]
