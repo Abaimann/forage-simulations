@@ -1,0 +1,11 @@
+# Runtime dependencies
+#
+# The core package (feed server, feed client, aggregation engine, in-memory
+# grid) only needs the Python standard library.  `perspective-python` is
+# required to push the grid into a live Perspective table / browser widget.
+perspective-python>=4.0
+
+# Development / test dependencies
+pytest>=8.0
+pytest-cov>=5.0
+tornado>=6.3
