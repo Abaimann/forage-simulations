@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iiot-telemetry-ingestion"
+version = "1.0.0"
+description = "Daikibo Industrials IIoT telemetry ingestion pipeline (ETL) for heterogeneous factory-floor sensor streams"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+authors = [{ name = "Deloitte - Technology Consulting" }]
+keywords = ["iiot", "telemetry", "etl", "data-pipeline", "anomaly-detection"]
+
+# Runtime dependencies: none (Python standard library only).
+# The pipeline is deliberately dependency-free so it can be embedded in
+# factory-edge runtimes with constrained package availability.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-cov>=4.1"]
+
+[project.scripts]
+iiot-ingest = "iiot_telemetry.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra --strict-markers"
+markers = [
+    "integration: end-to-end pipeline tests over full sample files",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["iiot_telemetry"]
+# The module is a two-line shim whose only statement is the __main__ guard.
+omit = ["src/iiot_telemetry/__main__.py"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
+fail_under = 100
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+    "@abstractmethod",
+]
