@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lyft-fleet"
+version = "1.0.0"
+description = "Clean Architecture + Strategy/Factory refactoring of the Lyft rental-car fleet maintenance domain."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Fleet Platform Team" }]
+keywords = ["clean-architecture", "strategy-pattern", "factory-pattern", "fleet-maintenance"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-cov>=4.1", "mypy>=1.8", "ruff>=0.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers --strict-config"
+markers = [
+    "unit: fast, isolated unit tests",
+    "integration: tests spanning several layers",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["lyft_fleet"]
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM", "ANN", "D"]
+# D105/D107 are not required: class docstrings document the arguments
+# (Google style "Args:" section), so a per-method docstring would duplicate them.
+ignore = ["D203", "D213", "D105", "D107"]
+
+[tool.ruff.lint.per-file-ignores]
+# Test modules: docstrings and annotations on test bodies add noise, not value.
+"tests/**" = ["D100", "D101", "D102", "D103", "D104", "ANN001", "ANN201"]
+# Scripts: illustrative classes used to exercise the README examples.
+"scripts/**" = ["D100", "D101", "D102", "D103", "ANN001", "ANN204"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+mypy_path = "src"
