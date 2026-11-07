@@ -1,0 +1,9 @@
+reaction_type,score,sentiment
+like,1,positive
+love,3,positive
+haha,2,positive
+wow,4,positive
+insightful,5,positive
+curious,2,neutral
+sad,-1,negative
+angry,-2,negative

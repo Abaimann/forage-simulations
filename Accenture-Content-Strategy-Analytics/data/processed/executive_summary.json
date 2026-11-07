@@ -1,0 +1,400 @@
+{
+  "report": {
+    "title": "Social Buzz - Content Engagement & Sentiment Analytics",
+    "client": "Social Buzz",
+    "segments_analyzed": 11,
+    "top_n": 5,
+    "scoring_weights": {
+      "volume": 0.3,
+      "reach": 0.2,
+      "interaction": 0.25,
+      "amplification": 0.15,
+      "sentiment": 0.1
+    }
+  },
+  "totals": {
+    "total_reactions": 118482,
+    "total_views": 1199994,
+    "total_shares": 8997,
+    "total_comments": 17903,
+    "total_content": 4500
+  },
+  "top_segments": [
+    {
+      "rank": 1,
+      "category": "Technology",
+      "engagement_score": 0.9872,
+      "engagement_rate": 12.3572,
+      "sentiment_score": 0.2541,
+      "positive_ratio": 0.6501,
+      "reactions": 33906,
+      "weighted_reaction_score": 58654,
+      "unique_reactors": 7862,
+      "content_count": 935,
+      "views": 335481,
+      "shares": 2654,
+      "comments": 4896
+    },
+    {
+      "rank": 2,
+      "category": "Entertainment",
+      "engagement_score": 0.8486,
+      "engagement_rate": 12.1909,
+      "sentiment_score": 0.2427,
+      "positive_ratio": 0.6349,
+      "reactions": 28316,
+      "weighted_reaction_score": 48860,
+      "unique_reactors": 7783,
+      "content_count": 926,
+      "views": 284778,
+      "shares": 2175,
+      "comments": 4226
+    },
+    {
+      "rank": 3,
+      "category": "Sports",
+      "engagement_score": 0.6165,
+      "engagement_rate": 12.115,
+      "sentiment_score": 0.1805,
+      "positive_ratio": 0.5825,
+      "reactions": 17691,
+      "weighted_reaction_score": 30375,
+      "unique_reactors": 7107,
+      "content_count": 660,
+      "views": 179167,
+      "shares": 1342,
+      "comments": 2673
+    },
+    {
+      "rank": 4,
+      "category": "Lifestyle",
+      "engagement_score": 0.4525,
+      "engagement_rate": 11.894,
+      "sentiment_score": 0.2282,
+      "positive_ratio": 0.5977,
+      "reactions": 10343,
+      "weighted_reaction_score": 17801,
+      "unique_reactors": 5763,
+      "content_count": 488,
+      "views": 106987,
+      "shares": 754,
+      "comments": 1628
+    },
+    {
+      "rank": 5,
+      "category": "Gaming",
+      "engagement_score": 0.3915,
+      "engagement_rate": 11.9961,
+      "sentiment_score": 0.1407,
+      "positive_ratio": 0.5412,
+      "reactions": 9033,
+      "weighted_reaction_score": 15736,
+      "unique_reactors": 5430,
+      "content_count": 376,
+      "views": 92472,
+      "shares": 676,
+      "comments": 1384
+    }
+  ],
+  "all_segments": [
+    {
+      "rank": 1,
+      "category": "Technology",
+      "engagement_score": 0.9872,
+      "engagement_rate": 12.3572,
+      "sentiment_score": 0.2541,
+      "positive_ratio": 0.6501,
+      "reactions": 33906,
+      "weighted_reaction_score": 58654,
+      "unique_reactors": 7862,
+      "content_count": 935,
+      "views": 335481,
+      "shares": 2654,
+      "comments": 4896
+    },
+    {
+      "rank": 2,
+      "category": "Entertainment",
+      "engagement_score": 0.8486,
+      "engagement_rate": 12.1909,
+      "sentiment_score": 0.2427,
+      "positive_ratio": 0.6349,
+      "reactions": 28316,
+      "weighted_reaction_score": 48860,
+      "unique_reactors": 7783,
+      "content_count": 926,
+      "views": 284778,
+      "shares": 2175,
+      "comments": 4226
+    },
+    {
+      "rank": 3,
+      "category": "Sports",
+      "engagement_score": 0.6165,
+      "engagement_rate": 12.115,
+      "sentiment_score": 0.1805,
+      "positive_ratio": 0.5825,
+      "reactions": 17691,
+      "weighted_reaction_score": 30375,
+      "unique_reactors": 7107,
+      "content_count": 660,
+      "views": 179167,
+      "shares": 1342,
+      "comments": 2673
+    },
+    {
+      "rank": 4,
+      "category": "Lifestyle",
+      "engagement_score": 0.4525,
+      "engagement_rate": 11.894,
+      "sentiment_score": 0.2282,
+      "positive_ratio": 0.5977,
+      "reactions": 10343,
+      "weighted_reaction_score": 17801,
+      "unique_reactors": 5763,
+      "content_count": 488,
+      "views": 106987,
+      "shares": 754,
+      "comments": 1628
+    },
+    {
+      "rank": 5,
+      "category": "Gaming",
+      "engagement_score": 0.3915,
+      "engagement_rate": 11.9961,
+      "sentiment_score": 0.1407,
+      "positive_ratio": 0.5412,
+      "reactions": 9033,
+      "weighted_reaction_score": 15736,
+      "unique_reactors": 5430,
+      "content_count": 376,
+      "views": 92472,
+      "shares": 676,
+      "comments": 1384
+    },
+    {
+      "rank": 6,
+      "category": "Finance",
+      "engagement_score": 0.3469,
+      "engagement_rate": 11.9027,
+      "sentiment_score": 0.1758,
+      "positive_ratio": 0.5849,
+      "reactions": 7222,
+      "weighted_reaction_score": 12206,
+      "unique_reactors": 4764,
+      "content_count": 365,
+      "views": 74899,
+      "shares": 544,
+      "comments": 1149
+    },
+    {
+      "rank": 7,
+      "category": "Food",
+      "engagement_score": 0.3026,
+      "engagement_rate": 11.7285,
+      "sentiment_score": 0.2707,
+      "positive_ratio": 0.6564,
+      "reactions": 4669,
+      "weighted_reaction_score": 8126,
+      "unique_reactors": 3548,
+      "content_count": 277,
+      "views": 49060,
+      "shares": 340,
+      "comments": 745
+    },
+    {
+      "rank": 8,
+      "category": "Travel",
+      "engagement_score": 0.2793,
+      "engagement_rate": 11.7305,
+      "sentiment_score": 0.2627,
+      "positive_ratio": 0.6582,
+      "reactions": 4094,
+      "weighted_reaction_score": 7019,
+      "unique_reactors": 3204,
+      "content_count": 249,
+      "views": 43144,
+      "shares": 294,
+      "comments": 673
+    },
+    {
+      "rank": 9,
+      "category": "Other",
+      "engagement_score": 0.265,
+      "engagement_rate": 12.1571,
+      "sentiment_score": 0.2376,
+      "positive_ratio": 0.6875,
+      "reactions": 426,
+      "weighted_reaction_score": 788,
+      "unique_reactors": 414,
+      "content_count": 15,
+      "views": 4302,
+      "shares": 33,
+      "comments": 64
+    },
+    {
+      "rank": 10,
+      "category": "Health",
+      "engagement_score": 0.1226,
+      "engagement_rate": 11.5668,
+      "sentiment_score": 0.2056,
+      "positive_ratio": 0.6129,
+      "reactions": 2059,
+      "weighted_reaction_score": 3545,
+      "unique_reactors": 1813,
+      "content_count": 148,
+      "views": 21968,
+      "shares": 141,
+      "comments": 341
+    },
+    {
+      "rank": 11,
+      "category": "Education",
+      "engagement_score": 0.1095,
+      "engagement_rate": 11.5176,
+      "sentiment_score": 0.2699,
+      "positive_ratio": 0.6774,
+      "reactions": 723,
+      "weighted_reaction_score": 1189,
+      "unique_reactors": 690,
+      "content_count": 61,
+      "views": 7736,
+      "shares": 44,
+      "comments": 124
+    }
+  ],
+  "data_quality": [
+    {
+      "dataset": "Users",
+      "rows_read": 8040,
+      "rows_accepted": 8000,
+      "rows_rejected": 40,
+      "missing_filled": 239,
+      "values_normalized": 10439,
+      "outliers_clipped": 116,
+      "duplicates_removed": 40,
+      "rejection_reasons": {
+        "duplicate_user_id": 40
+      }
+    },
+    {
+      "dataset": "Content",
+      "rows_read": 4511,
+      "rows_accepted": 4500,
+      "rows_rejected": 11,
+      "missing_filled": 15,
+      "values_normalized": 4875,
+      "outliers_clipped": 24,
+      "duplicates_removed": 11,
+      "rejection_reasons": {
+        "duplicate_content_id": 11
+      }
+    },
+    {
+      "dataset": "ReactionTypes",
+      "rows_read": 10,
+      "rows_accepted": 8,
+      "rows_rejected": 2,
+      "missing_filled": 0,
+      "values_normalized": 0,
+      "outliers_clipped": 0,
+      "duplicates_removed": 1,
+      "rejection_reasons": {
+        "duplicate_reaction_type": 1,
+        "unknown_reaction_type": 1
+      }
+    },
+    {
+      "dataset": "Reactions",
+      "rows_read": 120800,
+      "rows_accepted": 118950,
+      "rows_rejected": 1850,
+      "missing_filled": 0,
+      "values_normalized": 84346,
+      "outliers_clipped": 0,
+      "duplicates_removed": 865,
+      "rejection_reasons": {
+        "duplicate_reaction": 865,
+        "missing_reaction_type": 627,
+        "unknown_reaction_type": 358
+      }
+    },
+    {
+      "dataset": "Comments",
+      "rows_read": 18072,
+      "rows_accepted": 17903,
+      "rows_rejected": 169,
+      "missing_filled": 0,
+      "values_normalized": 0,
+      "outliers_clipped": 823,
+      "duplicates_removed": 79,
+      "rejection_reasons": {
+        "duplicate_comment": 79,
+        "missing_comment_sentiment": 90
+      }
+    },
+    {
+      "dataset": "PageShares",
+      "rows_read": 9030,
+      "rows_accepted": 8997,
+      "rows_rejected": 33,
+      "missing_filled": 0,
+      "values_normalized": 0,
+      "outliers_clipped": 0,
+      "duplicates_removed": 33,
+      "rejection_reasons": {
+        "duplicate_share": 33
+      }
+    },
+    {
+      "dataset": "PageViews",
+      "rows_read": 1203000,
+      "rows_accepted": 1199994,
+      "rows_rejected": 3006,
+      "missing_filled": 0,
+      "values_normalized": 0,
+      "outliers_clipped": 2306,
+      "duplicates_removed": 3006,
+      "rejection_reasons": {
+        "duplicate_view": 3006
+      }
+    }
+  ],
+  "joins": [
+    {
+      "name": "Reactions x ReactionTypes (reaction_type)",
+      "left_rows": 118950,
+      "right_rows": 8,
+      "matched_rows": 118950,
+      "unmatched_rows": 0,
+      "duplicate_keys": 0,
+      "match_rate": 100.0
+    },
+    {
+      "name": "Reactions x Content (content_id)",
+      "left_rows": 118950,
+      "right_rows": 4500,
+      "matched_rows": 118482,
+      "unmatched_rows": 468,
+      "duplicate_keys": 0,
+      "match_rate": 99.6066
+    }
+  ],
+  "integrity": {
+    "comments_orphan_events": 0,
+    "comments_total_events": 17903,
+    "reactions_orphan_events": 468,
+    "reactions_total_events": 118950,
+    "shares_orphan_events": 0,
+    "shares_total_events": 8997,
+    "views_orphan_events": 0,
+    "views_total_events": 1199994
+  },
+  "insights": [
+    "'Technology' is the top performing segment with an engagement score of 0.9872 across 935 content items.",
+    "'Entertainment' follows at 0.8486 (gap of 0.1386 to the leader).",
+    "All segments carry a non-negative sentiment; the weakest is 'Gaming' at 0.1407.",
+    "'Technology' has the highest interaction rate (12.36% of views convert into an interaction).",
+    "Data quality: 5,111 of 1,363,463 source rows (0.37%) were rejected during harmonization."
+  ]
+}

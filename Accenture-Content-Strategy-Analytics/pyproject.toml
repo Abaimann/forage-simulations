@@ -1,0 +1,85 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "social-buzz-analytics"
+version = "1.0.0"
+description = "Content engagement & sentiment analytics pipeline for the Social Buzz social media client."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Accenture Forage Simulation" }]
+keywords = ["analytics", "etl", "engagement", "sentiment", "social-media"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Office/Business",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.4",
+    "mypy>=1.8",
+]
+
+[project.scripts]
+social-buzz-analytics = "social_buzz_analytics.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra --strict-markers --strict-config"
+markers = [
+    "slow: marks tests that take a noticeable amount of time",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["src/social_buzz_analytics"]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM", "ANN", "D"]
+# ANN401 is disabled on purpose: the cleaning layer is the boundary that
+# *accepts* untrusted, dynamically typed CSV cells (`Any`) and narrows them
+# to validated domain values.  Rejecting `Any` there would defeat the
+# purpose of the cleaning stage.
+ignore = ["D203", "D213", "D105", "D107", "ANN401"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D100", "D101", "D102", "D103", "D104", "ANN001", "ANN201"]
+"scripts/**" = ["D100", "D101", "D102", "D103", "D104", "ANN001", "ANN201", "ANN204"]
+"unit_test.py" = ["D100", "ANN001", "ANN201", "ANN204"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+mypy_path = "src"

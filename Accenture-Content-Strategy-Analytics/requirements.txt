@@ -1,0 +1,11 @@
+# Runtime dependencies: none (Python 3.10+ standard library only).
+#
+# The pipeline is deliberately dependency-free so that it can run inside a
+# locked-down analytics environment (air-gapped VPC, read-only container)
+# without any package resolution step.
+#
+# Development / verification extras:
+pytest>=8.0
+pytest-cov>=5.0
+ruff>=0.4
+mypy>=1.8

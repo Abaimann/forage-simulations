@@ -1,0 +1,8 @@
+dataset,rows_read,rows_accepted,rows_rejected,missing_filled,values_normalized,outliers_clipped,duplicates_removed,rejection_reasons
+Users,8040,8000,40,239,10439,116,40,{'duplicate_user_id': 40}
+Content,4511,4500,11,15,4875,24,11,{'duplicate_content_id': 11}
+ReactionTypes,10,8,2,0,0,0,1,"{'duplicate_reaction_type': 1, 'unknown_reaction_type': 1}"
+Reactions,120800,118950,1850,0,84346,0,865,"{'duplicate_reaction': 865, 'missing_reaction_type': 627, 'unknown_reaction_type': 358}"
+Comments,18072,17903,169,0,0,823,79,"{'duplicate_comment': 79, 'missing_comment_sentiment': 90}"
+PageShares,9030,8997,33,0,0,0,33,{'duplicate_share': 33}
+PageViews,1203000,1199994,3006,0,0,2306,3006,{'duplicate_view': 3006}
